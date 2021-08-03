@@ -5,7 +5,7 @@ Batchout is a method to make a model robust to adversarial attacks. Using this m
 Batchout is an augmentation technique in the feature space. The main aim of batchout is to make
 the model adversarially robust. Batchout performs a simple linear convex combination between the features of two datapoints. 
 
-x = x~1~ + n * (x~2~ - x~1~) where x~1~, x~2~ are values of features of data-points and n is a parameter. The method is slightly similar to Mixup, major difference is the convex combination takes place in the feature space, this combination can be applied across various feature spaces and no such augmentation happens among the class variable.
+x = x<sub>1</sub> + n * (x<sub>2</sub> - x<sub>1</sub>) where x~1~, x~2~ are values of features of data-points and n is a parameter. The method is slightly similar to Mixup, major difference is the convex combination takes place in the feature space, this combination can be applied across various feature spaces and no such augmentation happens among the class variable.
 
 The current repo is an extension of the [original paper](http://dl.acm.org/citation.cfm?id=3293387). The original paper, released in 2017 proved it was better than A.T(trained using FGSM) on FGSM and DeepFool attacks (At that time PGD attack was not present). 
 
