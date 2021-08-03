@@ -1,0 +1,2 @@
+Model trained with momentum of 0.9 throughtout and this is actually better compared to having m=0.5. Also the starting lr=1e-2 is actually better than the start with lr=1e-1. And regularization increased from 1e-3 to 5e-3
+n= [0.3, 0, -0.2] with p=[0.6, 0.1, 0.3])  
