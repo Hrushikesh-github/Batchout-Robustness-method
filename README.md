@@ -39,7 +39,9 @@ Let us consider a simple scenario where there are three images: Cat, Dog and Fro
 Batchout can be implemented in PyTorch either using Hooks or chaning the class module of the model. I used hooks for ResNet and DenseNet, since they had slightly complicated class implementation and modified the code for VGG19.
 
 ### Repo Contents
-- torch_functions : Helper file contains functions to train model as well as FGSM, PGD attacks although Foolbox was used.
-- vgg19 : Contains batchout implementation, various ablation studies and results on VGG19
-- torch_hooks : Batchout implementation on ResNet and DenseNet
+- sample_usage.py : Example to use batchout on VGG.
+- torch_functions.py : Helper file contains functions to train model as well as FGSM, PGD attacks although Foolbox was used.
+- torch_hooks : Batchout implementation on ResNet and DenseNet. Various results obtained. 
 - terminology : Since it is a novel work, certain terminologies may not be understood, thus a detailed explaination is present here. 
+- vgg19 : Contains batchout implementation, various ablation studies and results on VGG19
+
